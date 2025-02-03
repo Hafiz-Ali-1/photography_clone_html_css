@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.main_box{
+    background-image: url(./photo.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.sidebar_menu{
+    height: 100%;
+    width: 250px;
+    background-color: #262B2E;
+    position: fixed;
+    left: -300px;
+    box-shadow: 0px 0px 5px white;
+    transition: all 0.5s ease-in-out 0.2s;
+}
+#check{
+    display: none;
+}
+
+.btn_one{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    font-size: 1.3rem;
+     cursor: pointer;
+}
+.btn_one:hover{
+    transform: scale(1.2);
+  
+    /* transition: all 0.2s linear 2s; */
+}
+.btn_two{
+    position: absolute;
+    top: 18px;
+    left: 220px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.btn_two:hover{
+    transform: scale(1.2);
+}
+.logo a {
+    color: white;
+    font-size:1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+   
+}
+.logo{
+    text-align: center;
+    /* padding: 10px; */
+    box-shadow: 0px 0px 4px white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+.menu{
+    padding-top: 30px;
+    color: white;
+    list-style: none;
+    font-size: 1.2rem;
+}
+.menu i {
+    padding-left: 10px;
+}
+li{
+    list-style: none;
+    line-height: 50px;
+    cursor: pointer;
+}
+li:hover{
+    box-shadow: 0px 0px 4px white;
+}
+.social_media {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    
+}
+.social_media i {
+    color: white;
+    padding-left: 8px;
+    font-size: 1.2rem;
+    opacity: 50%;
+}
+.social_media i:hover{
+    transform: scale(1.5);
+    opacity: 100%;
+}
+#check:checked ~ .sidebar_menu{
+    left: 0px;
+}
